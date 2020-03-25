@@ -1,8 +1,50 @@
 /******************
  * YOUR CODE HERE *
  ******************/
+const isOdd = function(num){
+  return num % 2 === 1;
+}
 
+const onlyOdds = function(num){
+  return num.filter(isOdd);
+}
 
+const isEven = function(num){
+  return num % 2 === 0;
+}
+
+const onlyEvens = function(num){
+  return num.filter(isEven);
+}
+
+const isShort = function(str){
+return (str.length < 7);
+}
+
+const shortNamesOnly = function(str){
+  return str.filter(isShort);
+}
+
+const isDName = function(name){
+  return name.startsWith('D');
+}
+
+const dNames = function(name){
+  return name.filter(isDName);
+}
+
+const containsLowercase = function (str){
+  return (/[a-z]/.test(str));
+}
+
+const removeTrolls = function(str){
+  return str.filter(containsLowercase);
+}
+
+const isTriStateArea = function(str){
+  return str.endsWith("NY " || "NJ " || "CT ");
+
+}
 
 /*********************************
  * OUR CODE BELOW; DO NOT TOUCH! *
